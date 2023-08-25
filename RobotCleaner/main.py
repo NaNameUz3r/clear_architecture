@@ -1,6 +1,6 @@
 from typing import NoReturn
 from robot import RobotCleaner
-from controller import InputReconciler
+from controllers.input_controller import InputReconciler
 
 
 def main() -> NoReturn:
