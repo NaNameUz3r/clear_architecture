@@ -1,5 +1,5 @@
-from base import ActionController
+from .base_controller import ActionController
 
-class CleanerController():
+class CleanerController(ActionController):
     def __init__(self) -> None:
         pass

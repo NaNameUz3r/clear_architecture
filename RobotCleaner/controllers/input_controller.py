@@ -1,4 +1,4 @@
-from robot import RobotCleaner
+from package.robot_cleaner import RobotCleaner
 from utils.exceptions import InvalidCommandException
 
 class InputReconciler():
@@ -14,11 +14,10 @@ class InputReconciler():
             while True:
                 input_command = input("> ")
                 try:
-                    self.controlled_robot.is_command_valid(command=input_command)
+                    print(self.controlled_robot.interpret_command(command=input_command))
                 except InvalidCommandException as e:
                     print(e.message)
                     continue
 
-                print(self.controlled_robot.interpret_command(command=input_command))
         except KeyboardInterrupt:
             print(self.controlled_robot.interpret_command("stop"))
