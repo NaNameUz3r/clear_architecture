@@ -1,5 +1,5 @@
 import unittest
-from .robot import RobotCleaner
+from .package.robot_cleaner import RobotCleaner
 
 class TestRobotCleaner(unittest.TestCase):
 
