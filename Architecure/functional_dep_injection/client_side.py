@@ -1,4 +1,4 @@
-from server_side import API
+from server_side_one_func import API
 
 
 class Client:
